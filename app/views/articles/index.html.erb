@@ -3,6 +3,10 @@
 	div {
 		font-family: 'Montserrat';
 	}
+	.flex {
+		display: flex;
+		flex-direction: row;
+	}
 </style>
 <div>
 	<h1>Articles listing page</h1>
@@ -12,7 +16,7 @@
 					<tr>
 							<th>Title</th>
 							<th>Description</th>
-							<th>Actions</th>
+							<th colspan="3">Actions</th>
 					</tr>
 			</thead>
 
@@ -23,12 +27,13 @@
 									<td><%= article.description %></td>
 									<td><%= link_to 'Show', article_path(article) %></td>
 									<td><%= link_to 'Edit', edit_article_path(article) %></td>
-									<td><%= link_to 'Delete', article_path(article), data: { turbo_method: :delete } %></td>
+									<td><%= link_to 'Delete', article_path(article), data: { turbo_method: :delete, turbo_confirm: "Are you sure you wanna delete this article?" } %></td>
 							</tr>
 					<% end %>
 			</tbody>
 	</table>
-
-	<%= button_to 'Create new article', new_article_path(@article), method: :get %>
-	<%= button_to 'Home Page', root_path, method: :get %>
+	<div class="flex">
+		<%= button_to 'Create new article', new_article_path, method: :get %>
+		<%= button_to 'Home Page', root_path, method: :get %>
+	</div>
 </div>

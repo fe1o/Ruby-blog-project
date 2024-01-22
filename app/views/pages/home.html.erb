@@ -5,12 +5,19 @@
   }
 </style>
 
-<div>
-  <div class="container">
-    <div class="bg-violet text-light p-5 rounded mt-3">
-      <h1 class="display-4">fe1o</h1>
-      <p class="lead">Hello, I'm Luiz Fernando a ruby dev from Brazil. This is my blog project.</p>
-      <hr class="my-4">
-    </div>
+
+<div class="container">
+  <div class="bg-violet text-light p-5 rounded mt-3" id="home-banner">
+    <h1 class="display-4">A.K.A fe1o</h1>
+    <p class="lead">Hello, I'm Luiz Fernando a ruby dev from Brazil. This is my blog project.</p>
+    <hr class="my-4">
+    <a class="btn btn-success btn-lg" href="#" role="button">Sign up</a>
   </div>
 </div>
+
+<footer class="footer bg-violet w-100 py-3 position-absolute bottom-0 start-50 translate-middle-x">
+  <div>
+    <span class="text-light" id="footer">Copyright &copy <%= link_to "fe1o", "https://github.com/fe1o", html_options = { target: "_blank", id: "fei"} %></span>
+  </div>
+</footer>
+

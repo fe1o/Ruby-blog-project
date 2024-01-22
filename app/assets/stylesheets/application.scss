@@ -21,3 +21,20 @@
   font-size: 1.7em;
   letter-spacing: -1px;
 }
+
+#home-banner {
+  background-image: asset-url('ruby.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+}
+
+#footer {
+  margin-left: 15px;
+}
+
+#fei {
+  text-decoration: underline overline;
+  color: white;
+}

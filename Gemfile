@@ -2,8 +2,12 @@ source "https://rubygems.org"
 
 ruby "3.2.2"
 
+gem 'sassc-rails'
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.2"
+
+gem 'bootstrap', '~> 5.3.0'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"

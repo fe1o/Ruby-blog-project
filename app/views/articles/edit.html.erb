@@ -5,7 +5,7 @@
 	}
 </style>
 
-<div>
+<div class="pg-bg">
 	<h1>Edit article</h1>
 
 	<% if @article.errors.any? %>
@@ -17,7 +17,7 @@
 			</ul>
 	<% end %>
 
-	<%= render 'form' %>
+	<%= render 'forme' %>
 
 	<%= link_to 'Back', articles_path %>
 </div>

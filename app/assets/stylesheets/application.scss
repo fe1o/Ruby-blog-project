@@ -16,6 +16,15 @@
   color: white !important;
 }
 
+.pg-bg {
+  min-height: 100vh;
+  background-color: #cec4d7;
+}
+
+.no-dec {
+  text-decoration: none;
+}
+
 #logo {
   float: left;
   font-size: 1.7em;
@@ -37,4 +46,9 @@
 #fei {
   text-decoration: underline overline;
   color: white;
+}
+
+#at-btns {
+  display: flex;
+  flex-direction: row;
 }

@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark">
   <div class="container-fluid">
-    <%= link_to "| fe1o's |", root_path, class: "navbar-brand", id: "logo" %>
+    <%= link_to(image_tag('brand.png', id: "logo"), root_path, class: "navbar-brand") %>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -11,13 +11,12 @@
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            About
+            More
           </a>
-          <ul class="dropdown-menu bg-violet">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
+          <ul class="dropdown-menu dropdown-menu-dark bg-violet">
+            <li><%= link_to "About", about_path, class: "dropdown-item" %></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="#">Contacts</a></li>
           </ul>
         </li>
       </ul>

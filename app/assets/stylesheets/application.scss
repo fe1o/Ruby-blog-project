@@ -41,10 +41,14 @@
   bottom: 15px;
 }
 
+.date-bottom {
+  position: absolute;
+  bottom: 55px;
+}
+
 #logo {
   float: left;
-  font-size: 1.7em;
-  letter-spacing: -1px;
+  height: 30px;
 }
 
 #home-banner {
